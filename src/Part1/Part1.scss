@@ -1,12 +1,12 @@
 .Part1-wrapper {
-  .image-1 {
-    grid-area: image-1;
+  .stock-1 {
+    grid-area: stock-1;
   }
-  .image-2 {
-    grid-area: image-2;
+  .stock-2 {
+    grid-area: stock-2;
   }
-  .image-3 {
-    grid-area: image-3;
+  .stock-3 {
+    grid-area: stock-3;
   }
   .heading {
     grid-area: heading;
@@ -15,7 +15,7 @@
   display: grid;
   grid-template-areas:
     'heading heading heading'
-    'image-1 image-2 image-3';
+    'stock-1 stock-2 stock-3';
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
   color: white;
@@ -58,11 +58,12 @@
     }
   }
 
+  // MEDIA QUERIES
   @media (min-width: 320px) {
     grid-template-areas:
       'heading heading'
-      'image-1 image-2'
-      'image-1 image-3';
+      'stock-1 stock-2'
+      'stock-1 stock-3';
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 
@@ -86,8 +87,8 @@
 
   @media (min-width: 768px) {
     grid-template-areas:
-      'image-1 image-2 heading'
-      'image-1 image-3 heading';
+      'stock-1 stock-2 heading'
+      'stock-1 stock-3 heading';
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
 

@@ -1,18 +1,20 @@
 import React from 'react';
 import './Part1.scss';
 
+const images = [
+  '/images/Image-01.jpg',
+  '/images/Image-02.jpg',
+  '/images/Image-03.jpg',
+];
+
 const Part1 = () => {
   return (
     <div className="Part1-wrapper">
-      <div className="image-1">
-        <img src="/images/Image-01.jpg" alt="1" />
-      </div>
-      <div className="image-2">
-        <img src="/images/Image-02.jpg" alt="2" />
-      </div>
-      <div className="image-3">
-        <img src="/images/Image-03.jpg" alt="3" />
-      </div>
+      {images.map((image, index) => (
+        <div key={index} className={`stock-${index + 1}`}>
+          <img src={image} alt={`stock-${index + 1}`} />
+        </div>
+      ))}
       <div className="heading">
         <h1>Answer your body's needs</h1>
         <p>

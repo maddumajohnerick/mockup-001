@@ -23,15 +23,12 @@
     max-width: 1200px;
     margin: 0px auto;
   }
-}
 
-@media (min-width: 320px) {
-  .App {
+  // MEDIA QUERIES
+  @media (min-width: 320px) {
     padding: 16px;
   }
-}
-@media (min-width: 1200px) {
-  .App {
+  @media (min-width: 1200px) {
     padding: 185px 24px;
   }
 }
