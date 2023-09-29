@@ -31,7 +31,7 @@
     font-family: OpenSansLight, serif;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 23px;
     letter-spacing: 1px;
     border-bottom: 1px solid white;
     padding-bottom: 16px;
@@ -40,19 +40,20 @@
 
   h2 {
     font-family: OpenSansLight, serif;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #9d1429;
   }
 
   p {
     font-family: OpenSansLight, serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
 
     &:last-of-type {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
       letter-spacing: 0.5px;
     }
   }
@@ -64,6 +65,23 @@
       'image-1 image-3';
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+
+      &:last-of-type {
+        font-size: 18px;
+      }
+    }
   }
 
   @media (min-width: 768px) {
@@ -72,5 +90,9 @@
       'image-1 image-3 heading';
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+
+    p {
+      text-align: left;
+    }
   }
 }
