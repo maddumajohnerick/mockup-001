@@ -11,6 +11,7 @@ const images = [
 
 const Part1 = () => {
   const [imageSelected, setImageSelected] = useState('');
+  let isMobile = false;
 
   const handleImgClick = (img) => {
     setImageSelected(img);
@@ -20,10 +21,19 @@ const Part1 = () => {
     setImageSelected('');
   };
 
+  if (window.innerWidth <= 768) {
+    isMobile = true;
+  }
+
+  console.log(isMobile);
   return (
     <div className="Part1-wrapper">
       {images.map((image, index) => (
-        <Fade key={index} delay={800 * index} duration={2000}>
+        <Fade
+          key={index}
+          delay={800 * index + (isMobile ? 800 : 0)}
+          duration={2000}
+        >
           <div className={`stock-${index + 1}`}>
             <img
               src={image}
@@ -35,7 +45,7 @@ const Part1 = () => {
           </div>
         </Fade>
       ))}
-      <Fade delay={2400} duration={2000}>
+      <Fade delay={isMobile ? 0 : 2400} duration={2000}>
         <div className="heading">
           <h1>ANSWER YOUR BODY'S NEEDS</h1>
           <p>
