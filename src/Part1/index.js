@@ -4,9 +4,9 @@ import Modal from '../Modal';
 import { Fade } from 'react-reveal';
 
 const images = [
-  '/images/Image-01.jpg',
-  '/images/Image-02.jpg',
-  '/images/Image-03.jpg',
+  `${process.env.REACT_APP_HOMEPAGE_URL}/images/Image-01.jpg`,
+  `${process.env.REACT_APP_HOMEPAGE_URL}/images/Image-02.jpg`,
+  `${process.env.REACT_APP_HOMEPAGE_URL}/images/Image-03.jpg`,
 ];
 
 const Part1 = () => {
