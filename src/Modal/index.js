@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactModal from 'react-modal';
+import { Fade } from 'react-reveal';
 import './Modal.scss';
 
 const Modal = ({ imageSelected, handleClose }) => {
@@ -18,7 +19,7 @@ const Modal = ({ imageSelected, handleClose }) => {
       isOpen={imageSelected}
       style={{
         overlay: {
-          backgroundColor: '#000000bd',
+          backgroundColor: '#000000eb',
         },
         content: {
           backgroundColor: 'transparent',
@@ -28,14 +29,16 @@ const Modal = ({ imageSelected, handleClose }) => {
       }}
     >
       <span className="close" onClick={handleClose}></span>
-      <div
-        src={imageSelected}
-        alt="selected full view"
-        className="selectedImg"
-        style={{
-          backgroundImage: `url(${imageSelected})`,
-        }}
-      ></div>
+      <Fade duration={500}>
+        <div
+          src={imageSelected}
+          alt="selected full view"
+          className="selectedImg"
+          style={{
+            backgroundImage: `url(${imageSelected})`,
+          }}
+        ></div>
+      </Fade>
     </ReactModal>
   );
 };

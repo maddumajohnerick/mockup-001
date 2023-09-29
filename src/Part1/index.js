@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Part1.scss';
 import Modal from '../Modal';
 import { Fade } from 'react-reveal';
+import './Part1.scss';
 
 const images = [
   `${process.env.REACT_APP_HOMEPAGE_URL}/images/Image-01.jpg`,

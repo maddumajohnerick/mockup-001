@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Part2.scss';
 import Modal from '../Modal';
 import { Fade } from 'react-reveal';
+import './Part2.scss';
 
 const list = [
   {
