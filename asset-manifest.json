@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mockup-001/static/css/main.d39e4dcc.css",
-    "main.js": "/mockup-001/static/js/main.9f134444.js",
+    "main.css": "/mockup-001/static/css/main.0867911d.css",
+    "main.js": "/mockup-001/static/js/main.a1ff7dfd.js",
     "static/js/787.de62a813.chunk.js": "/mockup-001/static/js/787.de62a813.chunk.js",
     "static/media/OpenSans-Regular.ttf": "/mockup-001/static/media/OpenSans-Regular.57cd57a648021fa1c396.ttf",
     "static/media/OpenSans-Light.ttf": "/mockup-001/static/media/OpenSans-Light.8ed223d62df9e1a6a838.ttf",
     "static/media/OpenSans-SemiBold.ttf": "/mockup-001/static/media/OpenSans-SemiBold.2b370b191e5562dadc78.ttf",
     "index.html": "/mockup-001/index.html",
-    "main.d39e4dcc.css.map": "/mockup-001/static/css/main.d39e4dcc.css.map",
-    "main.9f134444.js.map": "/mockup-001/static/js/main.9f134444.js.map",
+    "main.0867911d.css.map": "/mockup-001/static/css/main.0867911d.css.map",
+    "main.a1ff7dfd.js.map": "/mockup-001/static/js/main.a1ff7dfd.js.map",
     "787.de62a813.chunk.js.map": "/mockup-001/static/js/787.de62a813.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d39e4dcc.css",
-    "static/js/main.9f134444.js"
+    "static/css/main.0867911d.css",
+    "static/js/main.a1ff7dfd.js"
   ]
 }
