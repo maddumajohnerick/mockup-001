@@ -44,4 +44,12 @@
 
 img {
   cursor: pointer;
+  opacity: 1;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+img:hover {
+  opacity: 0.5;
+  transform: scale(98%);
 }

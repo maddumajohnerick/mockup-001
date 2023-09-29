@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Part2.scss';
 import Modal from '../Modal';
+import { Fade } from 'react-reveal';
 
 const list = [
   {
@@ -40,22 +41,26 @@ const Part2 = () => {
 
   return (
     <div className="Part2-wrapper">
-      <h1 className="header">All the latest from AEG</h1>
+      <Fade duration={2000}>
+        <h1 className="header">All the latest from AEG</h1>
+      </Fade>
       {list.map((item, index) => (
-        <div key={index} className={`item-${index + 1}`}>
-          <img
-            src={item.image}
-            alt={`item-${index + 1}`}
-            onClick={() => {
-              handleImgClick(item.image);
-            }}
-          />
-          <h2>{item.header}</h2>
-          <p>{item.details}</p>
-          <a href="#temp" onClick={() => handleClick(item)}>
-            Read more
-          </a>
-        </div>
+        <Fade key={index} delay={800 * index + 800} duration={2000}>
+          <div className={`item-${index + 1}`}>
+            <img
+              src={item.image}
+              alt={`item-${index + 1}`}
+              onClick={() => {
+                handleImgClick(item.image);
+              }}
+            />
+            <h2>{item.header}</h2>
+            <p>{item.details}</p>
+            <a href="#temp" onClick={() => handleClick(item)}>
+              Read more
+            </a>
+          </div>
+        </Fade>
       ))}
 
       {/* MODAL */}
