@@ -1,0 +1,76 @@
+.Part1-wrapper {
+  .image-1 {
+    grid-area: image-1;
+  }
+  .image-2 {
+    grid-area: image-2;
+  }
+  .image-3 {
+    grid-area: image-3;
+  }
+  .heading {
+    grid-area: heading;
+  }
+
+  display: grid;
+  grid-template-areas:
+    'heading heading heading'
+    'image-1 image-2 image-3';
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  color: white;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    margin-top: 0px;
+    font-family: OpenSansLight, serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+    padding-bottom: 16px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-family: OpenSansLight, serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #9d1429;
+  }
+
+  p {
+    font-family: OpenSansLight, serif;
+    font-size: 18px;
+    line-height: 30px;
+
+    &:last-of-type {
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    grid-template-areas:
+      'heading heading'
+      'image-1 image-2'
+      'image-1 image-3';
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-areas:
+      'image-1 image-2 heading'
+      'image-1 image-3 heading';
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+}

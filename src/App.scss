@@ -1,8 +1,37 @@
+@font-face {
+  font-family: 'OpenSansReg';
+  src: local('OpenSansReg'),
+    url('./fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: local('OpenSansLight'),
+    url('./fonts/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: local('OpenSansSemiBold'),
+    url('./fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
 .App {
   background-color: #0e1414;
   min-height: 100%;
+  padding: 8px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
 }
 
-.container {
-  max-width: 1500px;
+@media (min-width: 320px) {
+  .App {
+    padding: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .App {
+    padding: 185px 24px;
+  }
 }
