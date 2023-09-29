@@ -42,7 +42,7 @@ const Part2 = () => {
   return (
     <div className="Part2-wrapper">
       <Fade duration={2000}>
-        <h1 className="header">All the latest from AEG</h1>
+        <h1 className="header">ALL THE LATEST FROM AEG</h1>
       </Fade>
       {list.map((item, index) => (
         <Fade key={index} delay={800 * index + 800} duration={2000}>
@@ -57,7 +57,7 @@ const Part2 = () => {
             <h2>{item.header}</h2>
             <p>{item.details}</p>
             <a href="#temp" onClick={() => handleClick(item)}>
-              Read more
+              READ MORE
             </a>
           </div>
         </Fade>

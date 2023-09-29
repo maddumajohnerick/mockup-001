@@ -37,7 +37,7 @@ const Part1 = () => {
       ))}
       <Fade delay={2400} duration={2000}>
         <div className="heading">
-          <h1>Answer your body's needs</h1>
+          <h1>ANSWER YOUR BODY'S NEEDS</h1>
           <p>
             The way ingredients are sourced affects the way we nourish our
             bodies. Author Mark Schatzer believes our body naturally develops an
@@ -47,7 +47,7 @@ const Part1 = () => {
             appetite guides you to consume according to your body's needs
           </p>
 
-          <h2>Be mindful</h2>
+          <h2>BE MINDFUL</h2>
           <p>
             Sourcing local or organic food is a good way to start being more
             mindful about what you're cooking and eating.
