@@ -1,4 +1,12 @@
 .Part1-wrapper {
+  display: grid;
+  grid-template-areas:
+    'heading heading heading'
+    'stock-1 stock-2 stock-3';
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  color: white;
+
   .stock-1 {
     grid-area: stock-1;
   }
@@ -11,14 +19,6 @@
   .heading {
     grid-area: heading;
   }
-
-  display: grid;
-  grid-template-areas:
-    'heading heading heading'
-    'stock-1 stock-2 stock-3';
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
-  color: white;
 
   img {
     height: 100%;
@@ -59,7 +59,7 @@
   }
 
   // MEDIA QUERIES
-  @media (min-width: 320px) {
+  @media (min-width: 321px) {
     grid-template-areas:
       'heading heading'
       'stock-1 stock-2'
@@ -85,7 +85,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     grid-template-areas:
       'stock-1 stock-2 heading'
       'stock-1 stock-3 heading';

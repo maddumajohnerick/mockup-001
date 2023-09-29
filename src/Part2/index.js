@@ -2,9 +2,24 @@ import React from 'react';
 import './Part2.scss';
 
 const list = [
-  { header: 'Test', details: 'Test', image: '/images/Image-04.jpg' },
-  { header: 'Test', details: 'Test', image: '/images/Image-05.jpg' },
-  { header: 'Test', details: 'Test', image: '/images/Image-06.jpg' },
+  {
+    header: 'Summer Lunch Menu By Mark Best',
+    details:
+      "AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.",
+    image: '/images/Image-04.jpg',
+  },
+  {
+    header: 'A Traditional Christmas Eve, Mark Best Style',
+    details:
+      'One of Australias best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.',
+    image: '/images/Image-05.jpg',
+  },
+  {
+    header: 'Taking Taste Further',
+    details:
+      "This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most out of our products - and the best out of your food.",
+    image: '/images/Image-06.jpg',
+  },
 ];
 
 const Part2 = () => {
@@ -14,6 +29,7 @@ const Part2 = () => {
 
   return (
     <div className="Part2-wrapper">
+      <h1 className="header">All the latest from AEG</h1>
       {list.map((item, index) => (
         <div key={index} className={`item-${index + 1}`}>
           <img src={item.image} alt={`item-${index + 1}`} />
