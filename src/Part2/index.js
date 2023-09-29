@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Part2.scss';
+import Modal from '../Modal';
 
 const list = [
   {
@@ -23,8 +24,18 @@ const list = [
 ];
 
 const Part2 = () => {
+  const [imageSelected, setImageSelected] = useState('');
+
+  const handleImgClick = (img) => {
+    setImageSelected(img);
+  };
+
   const handleClick = (obj) => {
     console.log(`Clicked item ${obj.header}`);
+  };
+
+  const handleClose = () => {
+    setImageSelected('');
   };
 
   return (
@@ -32,7 +43,13 @@ const Part2 = () => {
       <h1 className="header">All the latest from AEG</h1>
       {list.map((item, index) => (
         <div key={index} className={`item-${index + 1}`}>
-          <img src={item.image} alt={`item-${index + 1}`} />
+          <img
+            src={item.image}
+            alt={`item-${index + 1}`}
+            onClick={() => {
+              handleImgClick(item.image);
+            }}
+          />
           <h2>{item.header}</h2>
           <p>{item.details}</p>
           <a href="#temp" onClick={() => handleClick(item)}>
@@ -40,6 +57,9 @@ const Part2 = () => {
           </a>
         </div>
       ))}
+
+      {/* MODAL */}
+      <Modal imageSelected={imageSelected} handleClose={handleClose} />
     </div>
   );
 };

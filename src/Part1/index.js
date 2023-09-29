@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Part1.scss';
+import Modal from '../Modal';
 
 const images = [
   '/images/Image-01.jpg',
@@ -8,11 +9,27 @@ const images = [
 ];
 
 const Part1 = () => {
+  const [imageSelected, setImageSelected] = useState('');
+
+  const handleImgClick = (img) => {
+    setImageSelected(img);
+  };
+
+  const handleClose = () => {
+    setImageSelected('');
+  };
+
   return (
     <div className="Part1-wrapper">
       {images.map((image, index) => (
         <div key={index} className={`stock-${index + 1}`}>
-          <img src={image} alt={`stock-${index + 1}`} />
+          <img
+            src={image}
+            alt={`stock-${index + 1}`}
+            onClick={() => {
+              handleImgClick(image);
+            }}
+          />
         </div>
       ))}
       <div className="heading">
@@ -32,6 +49,9 @@ const Part1 = () => {
           mindful about what you're cooking and eating.
         </p>
       </div>
+
+      {/* MODAL */}
+      <Modal imageSelected={imageSelected} handleClose={handleClose} />
     </div>
   );
 };
