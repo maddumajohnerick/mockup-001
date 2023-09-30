@@ -7,15 +7,15 @@ Click here for [demo](https://maddumajohnerick.github.io/mockup-001/)
 ## Tech
 
 - [React] - front-end JavaScript library
-  -- Main frontend library used
+  - Main frontend library used
 - [SASS] - CSS pre-processor
-  -- Better management of styles
+  - Better management of styles
 - [react-modal] - simple react modal
-  -- Nothing fancy needed so stick with just a basic
+  - Nothing fancy needed so stick with just a basic
 - [react-reveal] - animation
-  -- Simple and easy to use especially for landing pages
+  - Simple and easy to use especially for landing pages
 - [create-react-app] - setup
-  -- Ready for coding once app is created via command
+  - Ready for coding once app is created via command
 
 [//]: #
 [React]: https://react.dev/
